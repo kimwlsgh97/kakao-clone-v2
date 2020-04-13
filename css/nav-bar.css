@@ -1,0 +1,44 @@
+.nav {
+  position: fixed;
+  width: 100%;
+  left: 0px;
+  bottom: 0px;
+  padding: 20px 50px;
+  background-color: #fcfcfc;
+  border: 1px solid #f7f7f7;
+  animation: showNav 0.5s ease-out 0.5s forwards;
+  transform: translateY(80px);
+}
+
+.nav .nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__list-link {
+  position: relative;
+}
+
+.nav .nav__badge {
+  width: 20px;
+  height: 20px;
+  background-color: #dc5d46;
+  color: white;
+  position: absolute;
+  top: -15px;
+  right: -7px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+}
+
+@keyframes showNav {
+  from {
+    transform: translateY(80px);
+  }
+  to {
+    transform: none;
+  }
+}

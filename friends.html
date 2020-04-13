@@ -8,7 +8,7 @@
       crossorigin="anonymous"
     ></script>
     <title>Friends | Kakao Clone</title>
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <div class="status-bar">
@@ -43,29 +43,31 @@
       <header class="friends__header">
         <div class="friends__friend friend friend__lg">
           <div class="friend__column">
-            <img src="imgs/profile.webp" alt="friend" class="friend g_avatar" />
+            <img
+              src="imgs/profile.webp"
+              alt="friend"
+              class="friend__avatar g_avatar"
+            />
             <div class="friend__content">
               <span class="friend__name">Jinho</span>
               <span class="friend__status">I need you</span>
             </div>
           </div>
-          <div class="friend__column">
-            <span class="friend__song"></span>
-          </div>
+          <div class="friend__now-listening"></div>
         </div>
       </header>
       <div class="friends__plus">
-        <h5 class="plus__title">Plus Friend</h5>
+        <h5 class="friends__title">Plus Friend</h5>
         <div class="friends__friend friend">
           <div class="friend__column">
-            <img src="imgs/profile.webp" alt="friend" class="friend g_avatar" />
+            <img src="imgs/profile.webp" alt="friend" class="friend__avatar" />
             <div class="friend__content">
               <span class="friend__name">Jinho</span>
               <span class="friend__status">I need you</span>
             </div>
           </div>
           <div class="friend__column">
-            <span class="friend__song"></span>
+            <div class="friend__now-listening"></div>
           </div>
         </div>
       </div>
@@ -73,15 +75,17 @@
         <h5 class="friends__title">Friends 20</h5>
         <li class="friends__friend friend">
           <div class="friend__column">
-            <img src="imgs/profile.webp" alt="friend" class="friend g_avatar" />
+            <img src="imgs/profile.webp" alt="friend" class="friend__avatar" />
             <div class="friend__content">
               <span class="friend__name">Jinho</span>
               <span class="friend__status">I need you</span>
             </div>
           </div>
           <div class="friend__column">
-            <span class="friend__song">WHEN I GROW UP - NF</span>
-            <i class="fas fa-play"></i>
+            <div class="friend__now-listening">
+              <span>When I Grow Up - NF </span>
+              <span><i class="fas fa-play"></i></span>
+            </div>
           </div>
         </li>
       </ul>
@@ -111,5 +115,8 @@
         </li>
       </ul>
     </nav>
+    <div class="bigScreen">
+      <span class="bigScreen__text">Please make your screen small</span>
+    </div>
   </body>
 </html>

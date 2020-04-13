@@ -8,7 +8,7 @@
       crossorigin="anonymous"
     ></script>
     <title>Settings | Kakao Clone</title>
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <div class="status-bar">
@@ -24,10 +24,10 @@
       </div>
     </div>
     <header class="header">
-      <a href="more.html" class="header__back-btn">
-        <i class="fas fa-arrow-left fa-2x"></i>
-      </a>
       <div class="header__header-column">
+        <a href="more.html" class="header__back-btn">
+          <i class="fas fa-arrow-left"></i>
+        </a>
         <h1 class="header__title">Settings</h1>
       </div>
 
@@ -39,54 +39,101 @@
     </header>
     <main class="settings">
       <section class="settings__sections">
+        <ul class="settings__list settings__header">
+          <li class="settings__setting">
+            <div class="settings__column">
+              <span class="settings__icon">
+                <i class="fas fa-bullhorn"></i>
+              </span>
+              <span class="settings__title">Notice</span>
+            </div>
+          </li>
+          <li class="settings__setting">
+            <div class="settings__column">
+              <span class="settings__icon">
+                <i class="fas fa-flask"></i>
+              </span>
+              <span class="settings__title">Kakao Lab</span>
+            </div>
+          </li>
+          <li class="settings__setting">
+            <div class="setting__column">
+              <span class="settings__icon">
+                <i class="fas fa-info-circle"></i>
+              </span>
+              <span class="settings__title">Version</span>
+            </div>
+            <div class="setting__column">
+              <span class="kakao-version">9.1.2</span>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="settings__sections">
         <ul class="settings__list">
           <li class="settings__setting">
-            <span class="settings__icon">
-              <i class="fas fa-user-secret"></i>
-            </span>
-            <span class="settings__title">Privacy</span>
+            <div class="setting__column">
+              <span class="settings__icon">
+                <i class="fas fa-user-secret"></i>
+              </span>
+              <span class="settings__title">Privacy</span>
+            </div>
           </li>
           <li class="settings__setting">
-            <span class="settings__icon">
-              <i class="far fa-bell"></i>
-            </span>
-            <span class="settings__title">Notifications</span>
+            <div class="setting__column">
+              <span class="settings__icon">
+                <i class="far fa-bell"></i>
+              </span>
+              <span class="settings__title">Notifications</span>
+            </div>
           </li>
           <li class="settings__setting">
-            <span class="settings__icon">
-              <i class="far fa-user"></i>
-            </span>
-            <span class="settings__title">Friends</span>
+            <div class="setting__column">
+              <span class="settings__icon">
+                <i class="far fa-user"></i>
+              </span>
+              <span class="settings__title">Friends</span>
+            </div>
           </li>
           <li class="settings__setting">
-            <span class="settings__icon">
-              <i class="far fa-comment"></i>
-            </span>
-            <span class="settings__title">Chats</span>
+            <div class="setting__column">
+              <span class="settings__icon">
+                <i class="far fa-comment"></i>
+              </span>
+              <span class="settings__title">Chats</span>
+            </div>
           </li>
           <li class="settings__setting">
-            <span class="settings__icon">
-              <i class="far fa-comment-alt"></i>
-            </span>
-            <span class="settings__title">SMS Messages</span>
+            <div class="setting__column">
+              <span class="settings__icon">
+                <i class="far fa-comment-alt"></i>
+              </span>
+              <span class="settings__title">SMS Messages</span>
+            </div>
           </li>
           <li class="settings__setting">
-            <span class="settings__icon">
-              <i class="far fa-sun"></i>
-            </span>
-            <span class="settings__title">Display</span>
+            <div class="setting__column">
+              <span class="settings__icon">
+                <i class="far fa-sun"></i>
+              </span>
+              <span class="settings__title">Display</span>
+            </div>
           </li>
           <li class="settings__setting">
-            <span class="settings__icon">
-              <i class="fas fa-brush"></i>
-            </span>
-            <span class="settings__title">Themes</span>
+            <div class="setting__column">
+              <span class="settings__icon">
+                <i class="fas fa-brush"></i>
+              </span>
+              <span class="settings__title">Themes</span>
+            </div>
           </li>
           <li class="settings__setting">
-            <span class="settings__icon">
-              <i class="fas fa-ellipsis-h"></i>
-            </span>
-            <span class="settings__title">Advanced</span>
+            <div class="setting__column">
+              <span class="settings__icon">
+                <i class="fas fa-ellipsis-h"></i>
+              </span>
+              <span class="settings__title">Advanced</span>
+            </div>
           </li>
         </ul>
       </section>
@@ -115,5 +162,8 @@
         </li>
       </ul>
     </nav>
+    <div class="bigScreen">
+      <span class="bigScreen__text">Please make your screen small</span>
+    </div>
   </body>
 </html>
